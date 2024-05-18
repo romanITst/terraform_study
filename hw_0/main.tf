@@ -15,13 +15,13 @@ resource "random_password" "admin_password" {
 }
 
 resource "local_file" "user_password" {
-    filename = "./user_password.txt"
-    content  = random_password.user_password.result
+    filename        = "./user_password.txt"
+    content         = random_password.user_password.result
     file_permission = 0700
 }
 
 resource "local_file" "admin_password" {
-    filename = "./admin_password.txt"
-    content  = random_password.admin_password.result
+    filename        = "./admin_password.txt"
+    content         = random_password.admin_password.result
     file_permission = 0700
 }

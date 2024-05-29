@@ -8,16 +8,16 @@ terraform {
 }
 
 resource "local_file" "list_ip_addresses" {
-    filename = "./list_ip_addresses.txt"
+    filename = "./ip_addresses.txt"
     content  = join("/n", var.list_ip_addresses)
 }
 
 resource "local_file" "surname_name" {
-    filename = "./name_surname.txt"
+    filename = "./personal_info.txt"
     content  = var.surname_name
 }
 
 resource "local_file" "name_surname" {
-    filename = "./name_surname.txt"
+    filename = "./unique_ids.txt"
     content  = join("/n", var.unique_ids)
 }

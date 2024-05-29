@@ -9,6 +9,6 @@ variable "surname_name" {
 }
 
 variable "unique_ids" {
-    type = list(string)
+    type    = list(string)
     default = ["UID123","UID456","UID789"]
 }

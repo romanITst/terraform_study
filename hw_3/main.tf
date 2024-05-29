@@ -17,7 +17,7 @@ resource "local_file" "surname_name" {
     content  = var.surname_name
 }
 
-resource "local_file" "name_surname" {
+resource "local_file" "unique_ids" {
     filename = "./unique_ids.txt"
     content  = join("/n", var.unique_ids)
 }

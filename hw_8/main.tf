@@ -1,9 +1,9 @@
 data "local_file" "source_time" {
-  filename = "./source0.txt"
+  filename = "./source.txt"
 }
 
 data "local_file" "source_tf_version" {
-  filename = "./source1.txt"
+  filename = "./source2.txt"
 }
 
 resource "local_file" "time0" {
